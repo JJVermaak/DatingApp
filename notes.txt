@@ -1,0 +1,41 @@
+step 1 - Create Models C# Class with properties/variables
+
+Step 2 - Let dotnet EntityFramework know about the class 
+(create Prop DBset for new migration after editing the models folder)
+
+Step 3 - Dotnet ef migrations add {AddedUserEntity} (double check newly created migration)
+
+Step 4 - Apply to database - Dotnet ef database update
+
+-------the repository pattern------- lecture 26.
+
+Levels of abstraction --> C# <calls> EntityFramework <Calls> SQLIte
+
+##reasons to use repository pattern
+
+1.Minimizes Duplicate Logic
+
+2.Decouples Application from Persistence framework
+
+3.All DB Quesries in the same place
+
+4.Promotes testability
+
+Step 1 - Create C# Interface Class "IAuthrepository.cs"
+
+Step 2 - creates Methods in C* Interface for Register, Login, adn User Exists
+
+## Using the "using command will dispose of anything inside the {} braces below
+
+Step 3 - After Respository is made we need to tell our application 
+about it - add it to our services container to inject into other classes. (startup.cs file)
+
+-----AuthController------
+
+Ref##[HttpPost("register")]
+        public async Task<IActionResult> Register(string username, string password) 
+
+##String username, String Password won't work in the case so we have to create a DTO data transfer object.
+
+
+
