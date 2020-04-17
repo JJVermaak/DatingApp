@@ -37,5 +37,49 @@ Ref##[HttpPost("register")]
 
 ##String username, String Password won't work in the case so we have to create a DTO data transfer object.
 
+-----Validation-------
+
+Validate with data anotations eg. [Required] [Email Address]
+
+--------JWT Structure---------
+
+{
+	"alg" : "HS512",             Header > Payload > Secret
+	"typ" : "JWT"
+}
+
+
+-----Angular Forms--------
+
+how to make an HTML form an angular form:
+
+1a. Assign template reference variable = #loginForm="ngForm" and ngForm Directive
+
+1. Give it a name="username" attribute to allow angualt to assign it to the form controls
+
+2. Use a-ngmodel
+
+3. Use ngSubmit
+
+##using angular services taht will create methods that will make queries to the API---------
+
+The Job of a component is to provide data to our HTML template
+
+Services are used to avoid duplication code. Services can be made available for injection and to centralize our api calls in our application.
+
+Components are injectable by default and services are not so yo uneed to provide an injectable method
+
+##in order to receive proerties into our child component we need to use @input() valuesFromHome: any;
+
+## there is always 4 parts to adding an output property 
+
+1. output property itself
+2. asign new evenet emitter
+
+
+
+
+
+
 
 
