@@ -77,6 +77,9 @@ Components are injectable by default and services are not so yo uneed to provide
 2. asign new evenet emitter
 
 
+## Components provide the logic to mak our HTML work (keep the components as simple as possible)
+
+
 
 
 
