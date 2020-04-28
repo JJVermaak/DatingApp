@@ -80,6 +80,15 @@ Components are injectable by default and services are not so yo uneed to provide
 ## Components provide the logic to mak our HTML work (keep the components as simple as possible)
 
 
+---------------Section 8------------
+
+##You create a structure of all the methods you are going to use in a Interface repository. 75. Creating a new repository
+
+##After creating an interface and concrete implementation of the interface you need to create a user controller to extract data from the user.
+
+
+
+
 
 
 
