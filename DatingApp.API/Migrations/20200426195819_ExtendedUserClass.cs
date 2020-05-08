@@ -8,7 +8,7 @@ namespace DatingApp.API.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<string>(
-                name: "Bio",
+                name: "Introduction",
                 table: "Users",
                 nullable: true);
 
@@ -40,12 +40,12 @@ namespace DatingApp.API.Migrations
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
-                name: "Intrests",
+                name: "Interests",
                 table: "Users",
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
-                name: "KnownAs",
+                name: "knownAs",
                 table: "Users",
                 nullable: true);
 
@@ -95,7 +95,7 @@ namespace DatingApp.API.Migrations
                 name: "Photos");
 
             migrationBuilder.DropColumn(
-                name: "Bio",
+                name: "Introduction",
                 table: "Users");
 
             migrationBuilder.DropColumn(
@@ -119,11 +119,11 @@ namespace DatingApp.API.Migrations
                 table: "Users");
 
             migrationBuilder.DropColumn(
-                name: "Intrests",
+                name: "Interests",
                 table: "Users");
 
             migrationBuilder.DropColumn(
-                name: "KnownAs",
+                name: "knownAs",
                 table: "Users");
 
             migrationBuilder.DropColumn(
